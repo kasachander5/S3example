@@ -6,3 +6,11 @@ resource "aws_s3_bucket" "tests3" {
     Environment = "Dev"
   }
 }
+resource "aws_s3_bucket" "tests4" {
+  bucket = "deploycodebucket123"
+
+  tags = {
+    Name        = "Deploy bucket"
+    Environment = "Prod"
+  }
+}
